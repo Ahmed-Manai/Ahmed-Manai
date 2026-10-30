@@ -49,14 +49,10 @@ I build scalable, cloud-native applications end to end, from Angular front ends 
 | [**React-go-containerized-env**](https://github.com/Ahmed-Manai/React-go-containerized-env) | A three-tier app (React, Node and Go APIs, PostgreSQL) fully containerised with Docker | Docker · Go · Node · React |
 | [**ManaiBay**](https://github.com/Ahmed-Manai/ManaiBay) | A client management app with a JWT-secured REST API | React · FastAPI · Cassandra |
 | [**company-highlighter-browser-extension**](https://github.com/Ahmed-Manai/company-highlighter-browser-extension) | A browser extension that highlights companies from your own list on any web page | JavaScript |
-| [**Algorithms-Computational**](https://github.com/Ahmed-Manai/Algorithms-Computational) | Classic algorithms and data structures implemented in C# | C# |
+| [**Algorithms-Computational**](https://github.com/Ahmed-Manai/Algorithms-Computational) | Classic sorting algorithms in C#, one console project each, built and run in CI | C# · .NET |
 
 ## GitHub activity
 
-<p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=Ahmed-Manai&show_icons=true&count_private=true&hide_border=true&theme=tokyonight" alt="GitHub stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ahmed-Manai&layout=compact&langs_count=8&hide_border=true&theme=tokyonight" alt="Top languages"/>
-</p>
 <p>
   <img src="https://streak-stats.demolab.com/?user=Ahmed-Manai&hide_border=true&theme=tokyonight" alt="GitHub streak"/>
 </p>
