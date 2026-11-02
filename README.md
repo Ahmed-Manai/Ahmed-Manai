@@ -22,6 +22,24 @@ I build scalable, cloud-native applications end to end, from Angular front ends 
 - 🧱 I care about clean architecture, TDD and CI/CD automation
 - ✍️ I'm currently writing about LLMs, embeddings and vector search: [llm-articles](https://github.com/Ahmed-Manai/llm-articles)
 
+## 🚀 Latest release
+
+### [Company Highlighter v1.0](https://github.com/Ahmed-Manai/company-highlighter-browser-extension)
+
+A browser extension (Chrome, Edge, Firefox) that highlights the companies from your own list on any web page, which makes job boards, LinkedIn and news much faster to scan. Your list stays in your browser.
+
+<a href="https://github.com/Ahmed-Manai/company-highlighter-browser-extension">
+  <img src="https://raw.githubusercontent.com/Ahmed-Manai/company-highlighter-browser-extension/main/docs/screenshot-highlights.png" alt="Company Highlighter highlighting company names on a job board" width="720"/>
+</a>
+
+[Download v1.0](https://github.com/Ahmed-Manai/company-highlighter-browser-extension/releases/latest) · [Source](https://github.com/Ahmed-Manai/company-highlighter-browser-extension)
+
+## 🤝 Open-source contributions
+
+| Project | Contribution | Status |
+|---------|--------------|--------|
+| [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Support Azure OpenAI v1 endpoints for chat and embedding models (#3100)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100) | In review |
+
 ## Tech stack
 
 <p>
@@ -42,13 +60,13 @@ I build scalable, cloud-native applications end to end, from Angular front ends 
 
 | Project | What it is | Stack |
 |---------|-----------|-------|
+| [**company-highlighter-browser-extension**](https://github.com/Ahmed-Manai/company-highlighter-browser-extension) | Highlights the companies from your own list on any web page, with a settings page, popup and match badge | JavaScript · Manifest V3 |
 | [**llm-articles**](https://github.com/Ahmed-Manai/llm-articles) | A practical article on embeddings, cosine similarity, dense vector search and RAG | Python · OpenAI |
 | [**nexadash**](https://github.com/Ahmed-Manai/nexadash) | An admin dashboard starter with standalone components, dark mode, tests and CI | Angular 21 · Material · Tailwind |
 | [**User-Management-MS**](https://github.com/Ahmed-Manai/User-Management-MS) | A user management REST microservice with Swagger UI and CI | Java · Spring Boot · MongoDB |
 | [**IdentityServer4Pro**](https://github.com/Ahmed-Manai/IdentityServer4Pro) | An OAuth 2.0 / OpenID Connect identity provider built on IdentityServer4 | C# · ASP.NET Core |
 | [**React-go-containerized-env**](https://github.com/Ahmed-Manai/React-go-containerized-env) | A three-tier app (React, Node and Go APIs, PostgreSQL) fully containerised with Docker | Docker · Go · Node · React |
 | [**ManaiBay**](https://github.com/Ahmed-Manai/ManaiBay) | A client management app with a JWT-secured REST API | React · FastAPI · Cassandra |
-| [**company-highlighter-browser-extension**](https://github.com/Ahmed-Manai/company-highlighter-browser-extension) | A browser extension that highlights companies from your own list on any web page | JavaScript |
 | [**Algorithms-Computational**](https://github.com/Ahmed-Manai/Algorithms-Computational) | Classic sorting algorithms in C#, one console project each, built and run in CI | C# · .NET |
 
 ## GitHub activity
