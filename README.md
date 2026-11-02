@@ -62,7 +62,7 @@ A browser extension (Chrome, Edge, Firefox) that highlights the companies from y
 |---------|-----------|-------|
 | [**company-highlighter-browser-extension**](https://github.com/Ahmed-Manai/company-highlighter-browser-extension) | Highlights the companies from your own list on any web page, with a settings page, popup and match badge | JavaScript · Manifest V3 |
 | [**llm-articles**](https://github.com/Ahmed-Manai/llm-articles) | A practical article on embeddings, cosine similarity, dense vector search and RAG | Python · OpenAI |
-| [**nexadash**](https://github.com/Ahmed-Manai/nexadash) | An admin dashboard starter with standalone components, dark mode, tests and CI | Angular 21 · Material · Tailwind |
+| [**nexadash**](https://github.com/Ahmed-Manai/nexadash) | An admin dashboard starter with SVG charts, data tables, dark mode, tests and CI. [Live demo](https://ahmed-manai.github.io/nexadash/) | Angular 21 · Material · Tailwind |
 | [**User-Management-MS**](https://github.com/Ahmed-Manai/User-Management-MS) | A user management REST microservice with Swagger UI and CI | Java · Spring Boot · MongoDB |
 | [**IdentityServer4Pro**](https://github.com/Ahmed-Manai/IdentityServer4Pro) | An OAuth 2.0 / OpenID Connect identity provider built on IdentityServer4 | C# · ASP.NET Core |
 | [**React-go-containerized-env**](https://github.com/Ahmed-Manai/React-go-containerized-env) | A three-tier app (React, Node and Go APIs, PostgreSQL) fully containerised with Docker | Docker · Go · Node · React |
