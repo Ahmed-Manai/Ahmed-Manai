@@ -19,7 +19,7 @@ I build cloud-native applications end to end, from Angular front ends to .NET an
 
 - 🤖 I build LLM features with Azure OpenAI and the OpenAI API: embeddings, vector search and RAG
 - 🧩 I contribute to [Quarkus LangChain4j](https://github.com/quarkiverse/quarkus-langchain4j), the Java framework for LLM apps and agents
-- 🧠 I'm currently building AI agents: tool calling, the Model Context Protocol (MCP) and multi-step workflows
+- 🧠 I build tools for AI agents with the Model Context Protocol (MCP): my [docs-rag-mcp](https://github.com/Ahmed-Manai/docs-rag-mcp) server is on NuGet and in the official MCP Registry
 - 🏗️ I design cloud systems on Azure (Functions, AKS, Service Bus, Cosmos DB) with a focus on performance and cost
 - ⚡ I work on real-time data processing with gRPC, SignalR, MQTT and ZeroMQ
 - ✍️ I write about LLMs, embeddings and vector search: [llm-articles](https://github.com/Ahmed-Manai/llm-articles)
@@ -28,11 +28,22 @@ I build cloud-native applications end to end, from Angular front ends to .NET an
 
 | Project | What it is | Stack |
 |---------|-----------|-------|
+| [**docs-rag-mcp**](https://github.com/Ahmed-Manai/docs-rag-mcp) | An MCP server that lets Claude, GitHub Copilot and Cursor search your own Markdown, text and PDF files with RAG. Runs fully local with Ollama, or uses OpenAI or Azure OpenAI. Published on [NuGet](https://www.nuget.org/packages/DocsRagMcp) and in the official MCP Registry | C# · .NET 10 · MCP · SQLite |
 | [**llm-articles**](https://github.com/Ahmed-Manai/llm-articles) | A practical guide to embeddings, cosine similarity, dense vector search and RAG, with runnable notebooks | Python · OpenAI |
 | [**Azure OpenAI v1 endpoints for Quarkus LangChain4j**](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100) | Adds support for the new Azure OpenAI `v1` API to the chat and embedding models | Java · Quarkus · LangChain4j |
 | [**E-Learn-Transformers**](https://github.com/Ahmed-Manai/E-Learn-Transformers) | An Angular app that sends prompts to a GPT model and shows the generated text | Angular · TypeScript · OpenAI |
 
-## 🚀 Latest release
+## 🚀 Latest releases
+
+### [docs-rag-mcp](https://github.com/Ahmed-Manai/docs-rag-mcp)
+
+An MCP server that gives AI assistants retrieval-augmented generation over your own documents. Point it at a folder of notes, docs or PDFs and ask Claude, Copilot or Cursor questions about them: it answers from the most relevant passages and cites the file and section. Documents can stay on your machine with Ollama, and the index is a single SQLite file.
+
+```bash
+claude mcp add docs-rag -- dnx DocsRagMcp --yes
+```
+
+[NuGet](https://www.nuget.org/packages/DocsRagMcp) · [Source](https://github.com/Ahmed-Manai/docs-rag-mcp) · [Good first issues](https://github.com/Ahmed-Manai/docs-rag-mcp/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
 ### [Company Highlighter](https://github.com/Ahmed-Manai/company-highlighter-browser-extension)
 
@@ -59,9 +70,9 @@ A browser extension (Chrome, Edge, Firefox) that highlights the companies from y
 
 | Area | Technologies |
 |------|--------------|
-| **AI & LLM** | Azure OpenAI, OpenAI API, LangChain4j, RAG, embeddings, vector search, prompt engineering |
+| **AI & LLM** | Azure OpenAI, OpenAI API, Ollama, Model Context Protocol (MCP), Microsoft.Extensions.AI, LangChain4j, RAG, embeddings, vector search, prompt engineering |
 | **Languages** | C#, Java, Python, TypeScript, SQL |
-| **Back end** | .NET 6/7, ASP.NET Core, Blazor, Spring Boot, Quarkus, FastAPI |
+| **Back end** | .NET 6 to 10, ASP.NET Core, Blazor, Spring Boot, Quarkus, FastAPI |
 | **Front end** | Angular 14+, React |
 | **Cloud & DevOps** | Azure (Functions, AKS, Service Bus, Cosmos DB), Azure DevOps, Docker, Kubernetes, Jenkins, GitHub Actions |
 | **Data** | MySQL, PostgreSQL, MongoDB, Apache Spark |
