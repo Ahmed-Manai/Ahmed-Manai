@@ -18,7 +18,7 @@
 I build cloud-native applications end to end, from Angular front ends to .NET and Spring Boot services on Azure, and more and more the AI features inside them: LLM integrations, retrieval-augmented generation (RAG) and semantic search. I have 3+ years of professional experience and hold the **Microsoft Certified: Azure Solutions Architect Expert** certification.
 
 - 🤖 I build LLM features with Azure OpenAI and the OpenAI API: embeddings, vector search and RAG
-- 🧩 I contribute to [Quarkus LangChain4j](https://github.com/quarkiverse/quarkus-langchain4j), the Java framework for LLM apps and agents
+- 🧩 I contribute to [Quarkus LangChain4j](https://github.com/quarkiverse/quarkus-langchain4j), the Java framework for LLM apps and agents: my support for Azure OpenAI v1 endpoints [is merged](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100)
 - 🧠 I build tools for AI agents with the Model Context Protocol (MCP): my [docs-rag-mcp](https://github.com/Ahmed-Manai/docs-rag-mcp) server is on NuGet and in the official MCP Registry
 - 🏗️ I design cloud systems on Azure (Functions, AKS, Service Bus, Cosmos DB) with a focus on performance and cost
 - ⚡ I work on real-time data processing with gRPC, SignalR, MQTT and ZeroMQ
@@ -30,7 +30,7 @@ I build cloud-native applications end to end, from Angular front ends to .NET an
 |---------|-----------|-------|
 | [**docs-rag-mcp**](https://github.com/Ahmed-Manai/docs-rag-mcp) | An MCP server that lets Claude, GitHub Copilot and Cursor search your own Markdown, text and PDF files with RAG. Runs fully local with Ollama, or uses OpenAI or Azure OpenAI. Published on [NuGet](https://www.nuget.org/packages/DocsRagMcp) and in the official MCP Registry | C# · .NET 10 · MCP · SQLite |
 | [**llm-articles**](https://github.com/Ahmed-Manai/llm-articles) | A practical guide to embeddings, cosine similarity, dense vector search and RAG, with runnable notebooks | Python · OpenAI |
-| [**Azure OpenAI v1 endpoints for Quarkus LangChain4j**](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100) | Adds support for the new Azure OpenAI `v1` API to the chat and embedding models | Java · Quarkus · LangChain4j |
+| [**Azure OpenAI v1 endpoints for Quarkus LangChain4j**](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100) | Adds support for the new Azure OpenAI `v1` API to the chat and embedding models. Merged | Java · Quarkus · LangChain4j |
 | [**E-Learn-Transformers**](https://github.com/Ahmed-Manai/E-Learn-Transformers) | An Angular app that sends prompts to a GPT model and shows the generated text | Angular · TypeScript · OpenAI |
 
 ## 🚀 Latest releases
@@ -60,7 +60,7 @@ A browser extension (Chrome, Edge, Firefox) that highlights the companies from y
 | Project | Contribution | Status |
 |---------|--------------|--------|
 | [dotnet/maui](https://github.com/dotnet/maui) | [Fix misleading MA002 warning text about implicit package references (#39858)](https://github.com/dotnet/maui/pull/39858) | ✅ Merged |
-| [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Support Azure OpenAI v1 endpoints for chat and embedding models (#3100)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100) | In review |
+| [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Support Azure OpenAI v1 endpoints for chat and embedding models (#3100)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100) | ✅ Merged |
 
 ## Tech stack
 
