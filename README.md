@@ -19,7 +19,8 @@ I build cloud-native applications end to end, from Angular front ends to .NET an
 
 - 🤖 I build LLM features with Azure OpenAI and the OpenAI API: embeddings, vector search and RAG
 - 🧩 I contribute to [Quarkus LangChain4j](https://github.com/quarkiverse/quarkus-langchain4j), the Java framework for LLM apps and agents: my support for Azure OpenAI v1 endpoints [is merged](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100)
-- 🧠 I build tools for AI agents with the Model Context Protocol (MCP): my [docs-rag-mcp](https://github.com/Ahmed-Manai/docs-rag-mcp) server is on NuGet and in the official MCP Registry
+- 🧠 I build tools for AI agents with the Model Context Protocol (MCP): my [docs-rag-mcp](https://github.com/Ahmed-Manai/docs-rag-mcp) server is on NuGet and in the official MCP Registry, and I fix bugs in the [MCP C# SDK](https://github.com/modelcontextprotocol/csharp-sdk/pull/2041) it is built on
+- 🔗 I contribute fixes to [LangChain4j](https://github.com/langchain4j/langchain4j/pulls?q=is%3Apr+author%3AAhmed-Manai) (tool calling, chat memory) and [Keycloak](https://github.com/keycloak/keycloak/pulls?q=is%3Apr+author%3AAhmed-Manai) (admin console)
 - 🏗️ I design cloud systems on Azure (Functions, AKS, Service Bus, Cosmos DB) with a focus on performance and cost
 - ⚡ I work on real-time data processing with gRPC, SignalR, MQTT and ZeroMQ
 - ✍️ I write about LLMs, embeddings and vector search: [llm-articles](https://github.com/Ahmed-Manai/llm-articles)
@@ -28,7 +29,7 @@ I build cloud-native applications end to end, from Angular front ends to .NET an
 
 | Project | What it is | Stack |
 |---------|-----------|-------|
-| [**docs-rag-mcp**](https://github.com/Ahmed-Manai/docs-rag-mcp) | An MCP server that lets Claude, GitHub Copilot and Cursor search your own Markdown, text and PDF files with RAG. Runs fully local with Ollama, or uses OpenAI or Azure OpenAI. Published on [NuGet](https://www.nuget.org/packages/DocsRagMcp) and in the official MCP Registry | C# · .NET 10 · MCP · SQLite |
+| [**docs-rag-mcp**](https://github.com/Ahmed-Manai/docs-rag-mcp) | An MCP server that lets Claude, GitHub Copilot and Cursor search your own Markdown, text and PDF files with RAG. Hybrid search (vectors + keywords), watched folders that stay in sync, and fully local with Ollama, or OpenAI or Azure OpenAI. Published on [NuGet](https://www.nuget.org/packages/DocsRagMcp) and in the official MCP Registry | C# · .NET 10 · MCP · SQLite |
 | [**llm-articles**](https://github.com/Ahmed-Manai/llm-articles) | A practical guide to embeddings, cosine similarity, dense vector search and RAG, with runnable notebooks | Python · OpenAI |
 | [**Azure OpenAI v1 endpoints for Quarkus LangChain4j**](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100) | Adds support for the new Azure OpenAI `v1` API to the chat and embedding models. Merged | Java · Quarkus · LangChain4j |
 | [**E-Learn-Transformers**](https://github.com/Ahmed-Manai/E-Learn-Transformers) | An Angular app that sends prompts to a GPT model and shows the generated text | Angular · TypeScript · OpenAI |
@@ -37,7 +38,15 @@ I build cloud-native applications end to end, from Angular front ends to .NET an
 
 ### [docs-rag-mcp](https://github.com/Ahmed-Manai/docs-rag-mcp)
 
+<a href="https://www.nuget.org/packages/DocsRagMcp"><img src="https://img.shields.io/nuget/v/DocsRagMcp?logo=nuget&label=NuGet" alt="NuGet version"/></a>
+<a href="https://github.com/Ahmed-Manai/docs-rag-mcp/actions/workflows/ci.yml"><img src="https://github.com/Ahmed-Manai/docs-rag-mcp/actions/workflows/ci.yml/badge.svg" alt="CI"/></a>
+<a href="https://github.com/Ahmed-Manai/docs-rag-mcp/stargazers"><img src="https://img.shields.io/github/stars/Ahmed-Manai/docs-rag-mcp?style=flat&logo=github" alt="GitHub stars"/></a>
+
 An MCP server that gives AI assistants retrieval-augmented generation over your own documents. Point it at a folder of notes, docs or PDFs and ask Claude, Copilot or Cursor questions about them: it answers from the most relevant passages and cites the file and section. Documents can stay on your machine with Ollama, and the index is a single SQLite file.
+
+- **Hybrid search**: vector similarity blended with SQLite FTS5 keyword ranking, tuned on an evaluation set
+- **Watch mode**: indexed folders stay in sync on their own, including changes made while the server was stopped
+- **Incremental**: content hashes mean only changed files are embedded again
 
 ```bash
 claude mcp add docs-rag -- dnx DocsRagMcp --yes
@@ -60,6 +69,11 @@ A browser extension (Chrome, Edge, Firefox) that highlights the companies from y
 | Project | Contribution | Status |
 |---------|--------------|--------|
 | [dotnet/maui](https://github.com/dotnet/maui) | [Fix misleading MA002 warning text about implicit package references (#39858)](https://github.com/dotnet/maui/pull/39858) | ✅ Merged |
+| [modelcontextprotocol/csharp-sdk](https://github.com/modelcontextprotocol/csharp-sdk) | [Bind true and false prompt arguments to bool parameters (#2041)](https://github.com/modelcontextprotocol/csharp-sdk/pull/2041), a bug I found and reported in [#2040](https://github.com/modelcontextprotocol/csharp-sdk/issues/2040) | 🔄 In review |
+| [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j) | [Count only responses with tool calls against maxToolCallingRoundTrips (#7273)](https://github.com/langchain4j/langchain4j/pull/7273) | 🔄 In review |
+| [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j) | [Compare the memory id with the default id by value in ChatMemoryService (#7272)](https://github.com/langchain4j/langchain4j/pull/7272) | 🔄 In review |
+| [keycloak/keycloak](https://github.com/keycloak/keycloak) | [Set the admin console html lang attribute from the user locale (#55491)](https://github.com/keycloak/keycloak/pull/55491), a bug I found and reported in [#55490](https://github.com/keycloak/keycloak/issues/55490) | 🔄 In review |
+| [keycloak/keycloak](https://github.com/keycloak/keycloak) | [Show an error when an uploaded JSON file is not valid (#55498)](https://github.com/keycloak/keycloak/pull/55498) | 🔄 In review |
 | [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Support Azure OpenAI v1 endpoints for chat and embedding models (#3100)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3100) | ✅ Merged |
 
 ## Tech stack
