@@ -23,7 +23,7 @@ I build cloud-native applications end to end, from Angular front ends to .NET an
 - 🔗 I contribute fixes to [LangChain4j](https://github.com/langchain4j/langchain4j/pulls?q=is%3Apr+author%3AAhmed-Manai) (tool calling, chat memory) and [Keycloak](https://github.com/keycloak/keycloak/pulls?q=is%3Apr+author%3AAhmed-Manai) (admin console)
 - 🏗️ I design cloud systems on Azure (Functions, AKS, Service Bus, Cosmos DB) with a focus on performance and cost
 - ⚡ I work on real-time data processing with gRPC, SignalR, MQTT and ZeroMQ
-- ✍️ I write about LLMs, RAG and search: [I built a local RAG server for Claude and Copilot in C#. Here is what I learned about search.](https://dev.to/ahmed_manai/i-built-a-local-rag-server-for-claude-and-copilot-in-c-here-is-what-i-learned-about-search-2h3) on DEV, and [llm-articles](https://github.com/Ahmed-Manai/llm-articles)
+- ✍️ I write about LLMs, RAG and search: [I built a local RAG server for Claude and Copilot in C#. Here is what I learned about search.](https://dev.to/ahmed_manai/i-built-a-local-rag-server-for-claude-and-copilot-in-c-here-is-what-i-learned-about-search-2h3) and [I added a reranker to my local RAG server](https://dev.to/ahmed_manai/i-added-a-reranker-to-my-local-rag-server-the-right-page-now-comes-first-for-18-of-22-questions-6g2) on DEV, and [llm-articles](https://github.com/Ahmed-Manai/llm-articles)
 
 ## 🤖 AI & LLM work
 
@@ -48,12 +48,13 @@ An MCP server that gives AI assistants retrieval-augmented generation over your 
 - **Watch mode**: indexed folders stay in sync on their own, including changes made while the server was stopped
 - **Incremental**: content hashes mean only changed files are embedded again
 - **MCP resources**: indexed files are exposed as MCP resources, so the assistant can open the whole file behind an answer (0.7.0)
+- **Reranking**: an optional cross-encoder reorders the best passages; on the SDK docs test set the right page comes first for 18 of 22 questions instead of 12 ([write-up](https://dev.to/ahmed_manai/i-added-a-reranker-to-my-local-rag-server-the-right-page-now-comes-first-for-18-of-22-questions-6g2)) (0.8.0)
 
 ```bash
 claude mcp add docs-rag -- dnx DocsRagMcp --yes
 ```
 
-Listed in [Awesome-LLM-RAG](https://github.com/jxzhangjhu/Awesome-LLM-RAG) and in the [TensorBlock](https://github.com/TensorBlock/awesome-mcp-servers) and [Sagargupta16](https://github.com/Sagargupta16/awesome-mcp-servers) awesome MCP servers lists.
+Listed in [Awesome-LLM-RAG](https://github.com/jxzhangjhu/Awesome-LLM-RAG) and in the [TensorBlock](https://github.com/TensorBlock/awesome-mcp-servers), [Sagargupta16](https://github.com/Sagargupta16/awesome-mcp-servers) and [mcpHQ](https://github.com/mcpHQ/awesome-mcp-servers) awesome MCP servers lists.
 
 [NuGet](https://www.nuget.org/packages/DocsRagMcp) · [Source](https://github.com/Ahmed-Manai/docs-rag-mcp) · [How it works (article)](https://dev.to/ahmed_manai/i-built-a-local-rag-server-for-claude-and-copilot-in-c-here-is-what-i-learned-about-search-2h3) · [Good first issues](https://github.com/Ahmed-Manai/docs-rag-mcp/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
 
@@ -76,6 +77,9 @@ A browser extension (Chrome, Edge, Firefox) that highlights the companies from y
 | [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Apply the chat-model credentials and API version to the Azure OpenAI streaming chat model (#3299)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3299), which also made streaming calls send the Azure AD token | ✅ Merged |
 | [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Add Responses API support to the Azure OpenAI chat models (#3292)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3292) | 🔄 In review |
 | [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Add max-completion-tokens and stop to the Azure OpenAI chat models (#3300)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3300), needed by the o-series reasoning models | 🔄 In review |
+| [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Send the configured seed from the Azure OpenAI streaming chat model (#3305)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3305) | 🔄 In review |
+| [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Add gpt-image-1 options to the Azure OpenAI image model (#3306)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3306) | 🔄 In review |
+| [quarkiverse/quarkus-langchain4j](https://github.com/quarkiverse/quarkus-langchain4j) | [Add embedding-model.user to the Azure OpenAI embedding model (#3304)](https://github.com/quarkiverse/quarkus-langchain4j/pull/3304) | 🔄 In review |
 | [modelcontextprotocol/csharp-sdk](https://github.com/modelcontextprotocol/csharp-sdk) | [Bind true and false prompt arguments to bool parameters (#2041)](https://github.com/modelcontextprotocol/csharp-sdk/pull/2041), a bug I found and reported in [#2040](https://github.com/modelcontextprotocol/csharp-sdk/issues/2040) | 🔄 In review |
 | [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j) | [Count only responses with tool calls against maxToolCallingRoundTrips (#7273)](https://github.com/langchain4j/langchain4j/pull/7273) | 🔄 In review |
 | [langchain4j/langchain4j](https://github.com/langchain4j/langchain4j) | [Compare the memory id with the default id by value in ChatMemoryService (#7272)](https://github.com/langchain4j/langchain4j/pull/7272) | 🔄 In review |
